@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if form.errors %}
+<p class="login-error">Пароль или логин не подходит. Попробуйте еще раз</p>
+{% endif %}
+
+    <h1 class="main-title about-title">Вход в аккаунт</h1>
+
+    <form action="{% url 'login' %}" method="post" class="login-form">
+        {% csrf_token %}
+        <p class="login-form-username">
+            {{ form.username.label_tag }}
+            {{ form.username }}
+        </p>
+        <p class="login-form-password">
+            {{ form.password.label_tag }}
+            {{ form.password }}
+        </p>
+        <input type="submit" value="Войти" class="login-form-button">
+        <input type="hidden" name="next" value="{{ next }}">
+    </form>
+
+{% endblock %}

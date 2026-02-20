@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <section class="contacts">
+        <h1 class="main-title contacts-title">Контакты</h1>
+
+        <div class="contacts-content">
+            <h2 class="contacts-subtitle">Свяжитесь с нами</h2>
+            <i class="contacts-text">Мы всегда открыты для новых проектов, интересных предложений и просто приятного общения. Пишите, звоните или заходите на кофе!</i>
+
+            <div class="office">
+                <span class="office-title">📍 Наш офис</span>
+                <p class="office-text">г. Москва, ул. Кржижановского, д. 14, корп. 3, офис 402
+                    <i>(Бизнес-центр «Геометрия», вход со стороны парка)</i></p>
+            </div>
+
+            <ul class="phones">
+                <span class="phones-title">📞 Телефоны</span>
+                <li class="phones-item"><strong>Общие вопросы:</strong> +7 (495) 000-12-34</li>
+                <li class="phones-item"><strong>Отдел продаж:</strong> +7 (999) 123-45-67</li>
+                <li class="phones-item"><strong>Техническая поддержка:</strong> 8 (800) 555-35-35 (Бесплатно по РФ)</li>
+            </ul>
+
+            <ul class="email">
+                <span class="email-title">📧 Электронная почта</span>
+                <li class="email-item"><strong>Привет:</strong> hello@verona-studio.ru</li>
+                <li class="email-item"><strong>Сотрудничество:</strong> partner@verona-studio.ru</li>
+                <li class="email-item"><strong>Вакансии:</strong> hr@verona-studio.ru</li>
+            </ul>
+
+            <ul class="opening-hours">
+                <span class="opening-hours-title">⏰ Режим работы</span>
+                <li class="opening-hours-item"><strong>Пн – Пт:</strong> с 10:00 до 19:00</li>
+                <li class="opening-hours-item"><strong>Сб:</strong> с 11:00 до 16:00</li>
+                <li class="opening-hours-item"><strong>Вс:</strong> выходной (но мы читаем почту!)</li>
+            </ul>
+        </div>
+    </section>
+
+{% endblock %}

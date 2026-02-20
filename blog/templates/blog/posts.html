@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1 class="main-title about-title">Все посты</h1>
+
+    {% for p in posts %}
+
+        <article class="post">
+            <div class="post-title-and-date">
+                <a href="{% url 'post-detail-page' p.slug %}" class="post-title"><h2>{{ p.title }}</h2></a>
+                <p class="post-date">{{ p.date }}</p>
+            </div>
+            <p class="post-excerpt">{{ p.excerpt }}</p>
+            <div class="post-tags">
+                {% for tag in p.tags.all %}
+                    <strong class="post-tag">{{ tag.caption }}</strong>
+                {% endfor %}
+            </div>
+
+            <hr>
+        </article>
+        
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,389 @@
+body {
+    margin: 0;
+    background-color: #fafafa;
+    color: #000000;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px #0000001a;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    color: #007bff;
+}
+
+/* Правая часть навигации (форма и поиск) */
+.nav ul:last-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logout-form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+}
+
+.logout-form p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-button, .logout-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.login-button, .logout-button:hover {
+    background-color: #0056b3;
+}
+
+.search {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    width: 150px;
+}
+
+.main-title {
+    font-family: sans-serif;
+    color: #222;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.post {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-family: sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+.post-title-and-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.post-title {
+    text-decoration: none;
+    color: #313131;
+}
+
+.post-title h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.post-date {
+    color: #777;
+    font-size: 14px;
+}
+
+.post-excerpt {
+    line-height: 1.6;
+    color: #444;
+    margin: 15px 0;
+}
+
+.post-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.post-tag {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-top: 25px;
+}
+
+.contacts {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-family: sans-serif;
+}
+
+.contacts-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #0000000d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacts-subtitle {
+    color: #313131;
+    margin-top: 0;
+}
+
+.contacts-text {
+    display: block;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.office, .phones, .email, .opening-hours {
+    margin-bottom: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.office-title, .phones-title, .email-title, .opening-hours-title {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.office-text, .phones-item, .email-item, .opening-hours-item {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+.office-text i {
+    color: #888;
+    font-size: 14px;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-family: sans-serif;
+}
+
+.about-title {
+    font-size: 32px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #0000000d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-subtitle {
+    color: #313131;
+    margin-top: 0;
+    line-height: 1.4;
+    font-size: 22px;
+}
+
+.who-are-we, .what-are-we-doing, .principles, .history {
+    margin-bottom: 30px;
+}
+
+.who-are-we-title, .what-are-we-doing-title, .principles-title, .history-title {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.who-are-we-text, .what-are-we-doing-text, .history-text {
+    color: #444;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.principles {
+    padding: 0;
+    list-style: none;
+}
+
+.principles-item {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-left: 3px solid #007bff;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto 50px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #0000000d;
+    font-family: sans-serif;
+}
+
+.login-error {
+    color: #d9534f;
+    background-color: #f2dede;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    font-family: sans-serif;
+}
+
+.login-form p {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login-form input:focus {
+    border-color: #007bff;
+}
+
+.login-form-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-form-button:hover {
+    background-color: #0056b3;
+}
+
+.post-detail {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    font-family: sans-serif;
+}
+
+.full-post {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.full-post-header {
+    border-bottom: 2px solid #f0f0f0;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.full-post-title {
+    font-size: 28px;
+    color: #222;
+    margin: 0 0 10px 0;
+}
+
+.full-post-date {
+    color: #888;
+    font-size: 14px;
+}
+
+.full-post-content {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.full-post-footer {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.full-post-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.full-post-tag {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin: 0;
+}
